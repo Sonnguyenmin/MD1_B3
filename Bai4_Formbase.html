@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form đơn giản</title>
+    <style>
+        label {
+            font-size: 14px;
+            font-weight: 300;
+            color: rgb(59, 57, 233);
+        }
+        div {
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bài 1: form với các trường như sau</h1>
+    <form action="get" style="width: 600px;
+       border: 1px solid #333;">
+        <h1 style="background-color: rgb(214, 25, 0);
+                    color: #fff;
+                    text-align: center;
+                    margin:  10px;">                    
+            Sở thích của bạn
+        </h1>
+        <section style="margin: 5px 10px">
+            <label for="name">Họ và tên:</label>
+            <input style="box-shadow: 2px 1px #888888;" type="text" id="name" name="yourname" required><br>
+        </section>
+        <section style="margin: 5px 30px">
+            <label for="email">Email:</label>
+            <input style="box-shadow: 2px 1px #888888;" type="email"  id="email" name="email" required><br>
+        </section>
+        <section style="margin: 5px 20px">
+            <label for="email">Sở thích: </label>
+            <div>
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Thể thao</label>
+            </div>
+            <div>
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Âm nhạc</label>
+            </div>
+            <div>
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Đọc sách</label>
+            </div>
+            <div>
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Lướt web</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Chơi game</label>
+            </div>
+            <div>
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Điện ảnh</label>
+            </div>
+            <div>
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Du lịch</label>
+            </div>
+        </section>
+        <footer style="display: flex; align-items: center;
+        justify-content: center;margin-bottom: 10px;">
+            <input style="margin-right: 10px;" type="submit" value="Gửi thông tin">
+            <input type="submit" value="nhập lại">
+        </footer>
+    </form>
+    <br/>
+    <h1>Bài 2: form đăng ký học viên</h1>
+    <main style=" border: 1px solid #333; 
+                    border-radius: 4px;;
+                    width: 625px;
+                    ">
+        <form action="get" style="width: 600px;
+       border: 1px solid #333; margin: 10px;
+       background-color: #fcff60;
+       border-radius: 4px;">
+        <h1 style="background-color: rgb(92, 255, 187);
+                    color: #1d21ed;
+                    text-align: center;
+                    margin:  10px;">                    
+            Đăng ký học viên
+        </h1>
+        <section style="margin: 5px 10px">
+            <label for="name">Họ và tên:</label>
+            <input style="box-shadow: 2px 1px #888888;" type="text" id="name" name="yourname" required><br>
+        </section>
+        <section style="margin: 5px 30px">
+            <label for="birth">Email:</label>
+            <input style="box-shadow: 2px 1px #888888;" type="text"  id="birth" name="email" required><br>
+        </section>
+        <section style="margin: 5px 16px">
+            <label for="email">Giới tính: </label>
+            <div>
+                <input type="radio" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Nam</label>
+            </div>
+            <div>
+                <input type="radio" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Nữ</label>
+            </div>   
+            <div>
+                <input type="radio" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Khác:</label>
+            </div>         
+        </section>
+        <section style="margin: 5px 16px;">
+            <label for="message">Địa chỉ:</label>
+            <textarea id="message" name="message" rows="5"></textarea><br>
+        </section>
+        <section style="margin: 5px 34px">
+            <label for="subject">Lớp:</label>
+            <select id="subject" name="subject">
+                <option value="general">Chọn lớp</option>
+                <option value="sales">lớp 1</option>
+                <option value="support">lớp 2</option>
+                <option value="partnership">lớp 3</option>
+            </select><br>
+        </section>
+        <section style="margin: 5px 24px">
+            <label for="email">Email:</label>
+            <input style="box-shadow: 2px 1px #888888;" type="email"  id="email" name="email" required><br>
+        </section>
+        <section style="margin: 5px 0px">
+            <label for="phone">Điện thoại:</label>
+            <input style="box-shadow: 2px 1px #888888;" type="text" id="phone" name="phonenumber" required><br>
+        </section>
+        <footer style="display: flex; align-items: center;
+                        justify-content: center;
+                        margin-bottom: 10px;">
+            <input style="margin-right: 10px;" type="submit" value="Gửi thông tin">
+            <input type="submit" value="nhập lại">
+        </footer>
+    </form>
+    </main>
+</body>
+</html>
